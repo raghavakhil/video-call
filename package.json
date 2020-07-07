@@ -1,0 +1,21 @@
+{
+  "name": "applyhigh-video-call",
+  "version": "1.0.0",
+  "description": "\"Video-call-app\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "raghavakhil"
+  },
+  "author": "Akhil Kshirasagara",
+  "license": "ISC",
+  "dependencies": {
+    "agora-rtc-sdk": "^3.1.1",
+    "node-agora-rtc": "0.0.1",
+    "web-midi-api": "^2.0.8"
+  }
+}
