@@ -1,10 +1,10 @@
-const AgoraRTC = require('./AgoraRTCSDK-3.1.1')
+const AgoraRTC = require('agora-rtc-sdk')
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
 const remoteContainer = new JSDOM(`<body><script>document.getElementById('remote-container');</script></body>`)
 const canvasContainer = new JSDOM(`<body><script>document.getElementById('canvas-container');</script></body>`)
-
+const app = () => {
 // join stream
 module.exports = function addVideoStream(streamId) {
     const streamDiv = document.createElement('div')
@@ -74,4 +74,5 @@ client.join(null, 'applyhigh-video-call', null, (uid) => {
         })
         client.on("stream removed", removeVideoStream)
     })
-})
+})}
+module.exports = app;

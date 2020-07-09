@@ -15,7 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "agora-rtc-sdk": "^3.1.1",
-    "node-agora-rtc": "0.0.1",
-    "web-midi-api": "^2.0.8"
+    "jsdom": "^16.2.2",
+    "web-midi-api": "^2.0.8",
+    "xmlhttprequest": "^1.8.0"
   }
 }

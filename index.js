@@ -1,7 +1,7 @@
 const http = require('http')
 const fs = require('fs')
-const app = require('./app')
-const hostname = 'localhost';
+const app = require("./app")
+const hostname = "localhost";
 const port = 3000;
 
 http.createServer(function (req, res) {
@@ -16,4 +16,6 @@ http.createServer(function (req, res) {
         res.end();
     })
 })
-app.listen(hostname, port)
+app.listen(port,hostname,()=>{
+    console.log("Server Running")
+})
